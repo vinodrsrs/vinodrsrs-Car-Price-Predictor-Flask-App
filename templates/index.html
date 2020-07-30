@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+    body{
+        text-align: center;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price </title>
+    <font color="red"><h1 >Used Car Price Predictor App</h1></font>
+</head>
+
+<body bgcolor="Lime" >
+
+    <div style="color:black">
+        <form action="/work" method="POST">
+          
+            <h3>Which Year car bought ?  </h3>
+            <input id="first" name="Year" type="number ">
+            <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
+            <h3>Kilometers Driven?</h3><input id="third" name="Kms_Driven" required="required">
+            <h3>What Is the Fuel type?</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+        
+            </select>
+            <h3>Are you A Dealer or Individual ? </h3><br><select name="Seller_Type_Individual" id="resea" required="required">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select>
+            <h3>Transmission type</h3><br><select name="Transmission_Mannual" id="research" required="required">
+                <option value="Mannual">Manual Car</option>
+                <option value="Automatic">Automatic Car</option>
+            </select>
+            <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
+            
+
+
+
+
+        </form>
+
+        <br><font color="red"><h3>{{ prediction_text }}<h3></font>
+    </div>
+
+<footer>
+    Created By :  <font  color="Navy" ; size="5px"> Vinod</font>
+</footer>
+
+        
+</body>
+</html>
